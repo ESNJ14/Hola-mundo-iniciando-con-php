@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>La&nbsp;etiqueta&nbsp;bloclquote</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<h1>Sintaxis&nbsp;de&nbsp;la&nbsp;etiqueta&nbsp;&lt;BLOCKQUOTE&gt;</h1>
+
+<p>
+	La&nbsp;sintaxis&nbsp;de&nbsp;la&nbsp;etiqueta&nbsp;&lt;blockquote&gt;&nbsp;se&nbsp;muestra&nbsp;a&nbsp;continuacion:
+	<br><br>
+
+	&lt;blockquote&nbsp;cite=&apos;&apos;<i>...direccion&nbsp;original&nbsp;de&nbsp;la&nbsp;cita...</i>&apos;&apos;&gt;Texto&nbsp;que&nbsp;se&nbsp;cita&lt;/blockquote&gt;
+</p>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Ejercicio 15 - Información sobre eventos</title>
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=m7PF1SZTDAdfvunszbq5hqyziqMkhAE0d4YDCfyUI3YuQ28WTH81qcuGCNMl8_WT9-HAwD2OlW12FsCQrlqwRC22zTmxDLn26-VtrS8TP7VIExIDmvUj7XFmRxhCKbiEF4YTCJWp2GyM29as7vKI3OpIP-dcrbn2CQr3HeTk3NvjvUC9K-cw-uNhFkaA_iOs" charset="UTF-8"></script><style type="text/css">
+            body {
+                font-family: arial, helvetica;
+            }
+            #info {
+                width: 160px;
+                border: thin solid silver;
+                padding: 0.5em;
+            }
+            #info h1 {
+                margin: 0;
+            }
+
+            #info2 {
+                width: 160px;
+                border: thin solid silver;
+                padding: 0.5em;
+                margin-top: 25px;
+            }
+            #info2 h1 {
+                margin: 0;
+            }
+
+
+        </style>
+        <script type="text/javascript">
+            function muestraInformacion(e) {
+            	console.log(e.type)
+
+                if (e.type == "mousemove") {
+                    var div = document.getElementById('info')
+                    var string = "<h1> Ratón </h1>";
+                    string += "<p> Navegador ["+e.screenX+","+e.screenY+"]</p>";
+                    string += "<p> Página  ["+e.clientX+","+e.clientY+"]</p>";
+                }
+                div.innerHTML = string;
+               
+                function rcb(screenX,screenY){
+                div.style.backgrowndColor= getRandomColor();
+                }
+            }
+
+
+
+            function keyListener(e) {
+                console.log(e.type)
+
+                if (e.type == "keydown") {
+                    var div = document.getElementById('info2')
+                    var string = "<h1> Teclado </h1>";
+                    string += "<p> Carácter["+e.key+"]</p>";
+                    string += "<p> Código ["+e.keycode+"]</p>";
+                }
+                div.innerHTML = string;
+            }
+            
+
+        </script>
+    </head>
+    <body onmousemove="muestraInformacion(event)">
+        <div id="info">
+            
+            
+
+
+        </div>
+        <div id="info2">
+            
+            
+
+
+        </div>
+    </body>
+</html>

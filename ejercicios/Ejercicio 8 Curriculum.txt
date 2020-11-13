@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Rellena tu CV</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<h1>Rellena tu CV</h1>
+	
+<form acction="back.php" method="POST">
+
+<label for="nombre">Nombre:</label>
+
+<br>
+
+<input type="tex" maxlength="20" minlength="3" name="nombre" id="nombre" placeholder="Juan Carlos">
+<br>
+
+<label for="apellidos">Apellidos</label>
+
+<br>
+
+<input type="tex" maxlength="60" size="40" minlength="4" name="apellidos" id="apellidos" placeholder="Gubara de la Cruz Sanchez de la Rosa">
+
+<br>
+
+<label for="contra">Contraseña</label>
+
+<br>
+
+<input type="password" maxlength="10" name="contra" id="contra" placeholder="*******">
+
+<br>
+
+<label for="dni">DNI</label>
+
+<br>
+
+<input type="tex" maxlength="20" minlength="5" name="dni" id="dni">
+
+<br>
+
+<label for="sexo">Sexo</label>
+
+<br>
+<input  type="radio" name="sexo" value="1"> Hombre
+<br>
+<input  type="radio" name="sexo" value="1"> Mujer
+
+<br>
+<label>Incluir mi foto </label>
+<input type="file" name="photo">
+
+<br><br>
+<input type="checkbox" name="suscribe"> Suscrbirme al boletin de novedades
+<br><br>
+
+<input type="submit" name="guardar" value="Guardar cambios"> <input type="reset" name="reseteo" value="Borrar los datos">
+</form>
+
+</body>
+</html>
